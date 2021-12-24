@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="TAMBAH BUKU"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silahkan masukkan data buku yang akan diisi ke sistem inventori"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/bg_border"
+                android:elevation="6dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/ed_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Penulis"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+                <EditText
+                    android:id="@+id/ed_penulis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori Buku"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_fiksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fiksi" />
+                    <RadioButton
+                        android:id="@+id/rb_nonfiksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Non Fiksi" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cb_science"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:text="Science" />
+                    <CheckBox
+                        android:id="@+id/cb_fantasy"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fantasy"
+                        android:layout_toRightOf="@+id/cb_science"/>
+                    <CheckBox
+                        android:id="@+id/cb_drama"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:text="Drama"
+                        android:layout_toRightOf="@+id/cb_fantasy"/>
+                    <CheckBox
+                        android:id="@+id/cb_action"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:text="Action"
+                        android:layout_toRightOf="@+id/cb_drama"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/Widget.AppCompat.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:max="10" />
+
+                <TextView
+                    android:id="@+id/txt_ptrate"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:hint="0/10" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/button"-->
+                <!--                    android:layout_width="156dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="32dp"-->
+                <!--                    android:text="Tambah"-->
+                <!--                    android:background="@drawable/bgbtn"-->
+                <!--                    android:textSize="16dp"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    />-->
+
+
+                <Button
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="156dp"
+                    android:layout_height="48dp"
+                    android:text="Tambah"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:backgroundTint="@color/blue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="32dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
