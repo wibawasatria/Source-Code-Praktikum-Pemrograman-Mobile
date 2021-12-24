@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Inventori Perpustakaan-Modul 3 dan 4</string>
+    <string name="judul">Aplikasi Inventori Perpustakaan</string>
+    <string name="desc_home">Aplikasi untuk menambah inventori buku pada perpustakaan</string>
+    <string name="mulai">Mulai</string>
+    <string name="tekan_tombol">Klik untuk memulai</string>
+</resources>

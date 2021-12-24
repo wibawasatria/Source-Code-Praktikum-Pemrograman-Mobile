@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="6dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="@drawable/bg_border">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp"
+        android:elevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:elevation="6dp"
+            >
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama penulis"
+            android:layout_below="@+id/judul"
+            android:fontFamily="sans-serif"
+            />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <!--    <Button-->
+        <!--        android:id="@+id/edit"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Edit"-->
+        <!--        android:layout_toLeftOf="@+id/hapus"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_margin="4dp"-->
+        <!--        android:fontFamily="sans-serif"-->
+        <!--        android:backgroundTint="@color/green"-->
+        <!--        android:textStyle="bold"/>-->
+
+        <!--    <Button-->
+        <!--        android:id="@+id/hapus"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Hapus"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_margin="4dp"-->
+        <!--        android:fontFamily="sans-serif"-->
+        <!--        android:backgroundTint="@color/red"-->
+        <!--        android:textStyle="bold"/>-->
+
+
+</LinearLayout>

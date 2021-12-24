@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="EDIT BUKU"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/white" />
+<!--            <TextView-->
+<!--                android:id="@+id/data"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="left"-->
+<!--                android:text="EDIT BUKU"-->
+<!--                android:textSize="24dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_marginBottom="2dp"-->
+<!--                android:textColor="@color/white" />-->
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Silahkan masukkan edit data buku pada sistem inventori"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/bg_border"
+                android:elevation="6dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku"
+                    android:textSize="18sp"/>
+<!--                <EditText-->
+<!--                    android:id="@+id/ed_judul"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+                <TextView
+                    android:id="@+id/txt_hasil_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hasil judul buku"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/txt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Penulis"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+<!--                <EditText-->
+<!--                    android:id="@+id/ed_penulis"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+                <TextView
+                    android:id="@+id/txt_hasil_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hasil nama penulis"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/txt_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori Buku"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+<!--                <EditText-->
+<!--                    android:id="@+id/ed_kategori"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+                <TextView
+                    android:id="@+id/txt_hasil_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hasil kategori"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/txt_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+<!--                <EditText-->
+<!--                    android:id="@+id/ed_genre"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+                <TextView
+                    android:id="@+id/txt_hasil_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hasil genre"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/txt_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+<!--                <EditText-->
+<!--                    android:id="@+id/ed_rating"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+                <TextView
+                    android:id="@+id/txt_hasil_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hasil rating"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/txt_verif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Validasi Data"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_valid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valid" />
+                    <RadioButton
+                        android:id="@+id/rb_novalid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:text="Tidak Valid" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/button"-->
+                <!--                    android:layout_width="156dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="32dp"-->
+                <!--                    android:text="Tambah"-->
+                <!--                    android:background="@drawable/bgbtn"-->
+                <!--                    android:textSize="16dp"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    />-->
+
+
+                <Button
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="156dp"
+                    android:layout_height="48dp"
+                    android:text="Simpan"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:backgroundTint="@color/blue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="32dp"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
